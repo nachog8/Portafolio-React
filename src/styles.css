@@ -454,3 +454,11 @@ body::-webkit-scrollbar { /* Para Chrome, Safari y Edge */
   width: 20px;
   height: 20px; 
 }
+
+.mostrar_mas_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+}

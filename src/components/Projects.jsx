@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Projects = () => {
+  const [mostrarMasProjects, setMostrarMasProjects] = useState(false);
+
+  const toggleProjects = () => {
+    setMostrarMasProjects(!mostrarMasProjects);
+  };
+
   return (
     <section id="proyectos" className="cont-exterior proyectos">
       <div className="cont-interior">
@@ -55,24 +61,33 @@ const Projects = () => {
               <div className="proyecto_cont">
                 <div className="proyecto_imagen">
                   <img
-                    src="img/proyectos/JuniorCoderBook.png"
-                    alt="JuniorCoderBook - Red Social para Juniors Developers"
+                    src="img/proyectos/star_wars.jpg"
+                    alt="Tribute page screenshot"
                   />
                 </div>
                 <div className="proyecto_text-content">
                   <h3 className="proyecto_header">
-                    JuniorCoderBook (Proyecto NoCountry)
+                    Stars Wars (Proyecto de curso)
                   </h3>
                   <p className="proyecto_texto plain-text">
-                    Red social para juniors developers. Comparte tus notas con
-                    otros desarrolladores y estudiantes. Utilizamos tecnologías
-                    como React, Axios, Express, Node, SCSS.
+                    Este proyecto es una página web que interactúa con la API de
+                    Star Wars (SWAPI) para mostrar información sobre personajes,
+                    naves espaciales y películas del universo de Star Wars.
+                    Utilizamos tecnologias como React, Boostrap, SWAPI.
                   </p>
                 </div>
                 <div className="proyecto_opc">
                   <a
+                    className="proyecto_button proyecto_button_l button"
+                    href="https://star-wars-nachog8.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div>Visitar web</div>
+                  </a>
+                  <a
                     className="proyecto_button proyecto_button_r button"
-                    href="https://github.com/nachog8/JuniorCoderBook"
+                    href="https://github.com/nachog8/Star-Wars"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -200,23 +215,24 @@ const Projects = () => {
               <div className="proyecto_cont">
                 <div className="proyecto_imagen">
                   <img
-                    src="img/proyectos/pert.png"
-                    alt="Tribute page screenshot"
+                    src="img/proyectos/JuniorCoderBook.png"
+                    alt="JuniorCoderBook - Red Social para Juniors Developers"
                   />
                 </div>
                 <div className="proyecto_text-content">
                   <h3 className="proyecto_header">
-                    PertApp (Proyecto de universidad)
+                    JuniorCoderBook (Proyecto NoCountry)
                   </h3>
                   <p className="proyecto_texto plain-text">
-                    Aplicacion de escritorio para resolver el algoritmo de PERT.
-                    Utilizamos tecnologias como Python, Tkinter.
+                    Red social para juniors developers. Comparte tus notas con
+                    otros desarrolladores y estudiantes. Utilizamos tecnologías
+                    como React, Axios, Express, Node, SCSS.
                   </p>
                 </div>
                 <div className="proyecto_opc">
                   <a
                     className="proyecto_button proyecto_button_r button"
-                    href="https://github.com/nachog8/PertApp"
+                    href="https://github.com/nachog8/JuniorCoderBook"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -228,7 +244,51 @@ const Projects = () => {
           </div>
 
           {/* Septimo Proyecto */}
+          {mostrarMasProjects && (
+            <div className="proyectos_proyecto proyecto">
+              <div className="proyecto_content">
+                <div className="proyecto_cont">
+                  <div className="proyecto_imagen">
+                    <img
+                      src="img/proyectos/pert.png"
+                      alt="Tribute page screenshot"
+                    />
+                  </div>
+                  <div className="proyecto_text-content">
+                    <h3 className="proyecto_header">
+                      PertApp (Proyecto de universidad)
+                    </h3>
+                    <p className="proyecto_texto plain-text">
+                      Aplicacion de escritorio para resolver el algoritmo de
+                      PERT. Utilizamos tecnologias como Python, Tkinter.
+                    </p>
+                  </div>
+                  <div className="proyecto_opc">
+                    <a
+                      className="proyecto_button proyecto_button_r button"
+                      href="https://github.com/nachog8/PertApp"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div>GitHub</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
+
+        {/* Botón para mostrar/ocultar nuevos proyectos */}
+        <a
+          className="proyecto_button proyecto_button_r button mostrar_mas_button"
+          onClick={toggleProjects}
+          style={{ cursor: "pointer" }}
+        >
+          <div>
+            {mostrarMasProjects ? "Ocultar Proyectos" : "Mostrar Más Proyectos"}
+          </div>
+        </a>
       </div>
     </section>
   );

@@ -13,11 +13,13 @@ function App() {
   return (
     <div>
       <Header />
-      <Hero />
-      <Projects />
-      <Technologies />
-      <Extra />
-      <About />
+      <main className="main-flex">
+        <Hero />
+        <Projects />
+        <Technologies />
+        <Extra />
+        <About />
+      </main>
       <Contact />
       <ScrollButton />
     </div>

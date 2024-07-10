@@ -18,7 +18,7 @@ const Hero = () => {
             <img src="img/img_nacho.jpg" alt="Ignacio Guridi Foto" />
           </div>
           <a
-            className="hero_button button"
+            className="hero_button button text-decoration-none text-reset"
             href="CV Ignacio Guridi Desarrollador Web.pdf"
             download
           >

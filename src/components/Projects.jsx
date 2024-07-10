@@ -35,7 +35,7 @@ const Projects = () => {
                 </div>
                 <div className="proyecto_opc">
                   <a
-                    className="proyecto_button proyecto_button_l button"
+                    className="proyecto_button proyecto_button_l button text-decoration-none text-reset"
                     href="https://conectandosaberes.villamaria.gob.ar/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const Projects = () => {
                     <div>Visitar web</div>
                   </a>
                   <a
-                    className="proyecto_button proyecto_button_r button"
+                    className="proyecto_button proyecto_button_r button text-decoration-none text-reset"
                     href="https://github.com/utn-conectando-saberes"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -78,7 +78,7 @@ const Projects = () => {
                 </div>
                 <div className="proyecto_opc">
                   <a
-                    className="proyecto_button proyecto_button_l button"
+                    className="proyecto_button proyecto_button_l button text-decoration-none text-reset"
                     href="https://star-wars-nachog8.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -86,7 +86,7 @@ const Projects = () => {
                     <div>Visitar web</div>
                   </a>
                   <a
-                    className="proyecto_button proyecto_button_r button"
+                    className="proyecto_button proyecto_button_r button text-decoration-none text-reset"
                     href="https://github.com/nachog8/Star-Wars"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -120,7 +120,7 @@ const Projects = () => {
                 </div>
                 <div className="proyecto_opc">
                   <a
-                    className="proyecto_button proyecto_button_r button"
+                    className="proyecto_button proyecto_button_r button text-decoration-none text-reset"
                     href="https://github.com/yarmoiseev/frontend_lp_bikes"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -155,7 +155,7 @@ const Projects = () => {
                 </div>
                 <div className="proyecto_opc">
                   <a
-                    className="proyecto_button proyecto_button_r button"
+                    className="proyecto_button proyecto_button_r button text-decoration-none text-reset"
                     href="https://github.com/nachog8/Regresion-Logistica-Copa-America"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -189,7 +189,7 @@ const Projects = () => {
                 </div>
                 <div className="proyecto_opc">
                   <a
-                    className="proyecto_button proyecto_button_l button"
+                    className="proyecto_button proyecto_button_l button text-decoration-none text-reset"
                     href="https://www.figma.com/proto/Qns32BvZ8hcT8jxzGil1H6/PROYECTO_S16?node-id=222-824&starting-point-node-id=222%3A824"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -197,7 +197,7 @@ const Projects = () => {
                     <div>Vista Previa</div>
                   </a>
                   <a
-                    className="proyecto_button proyecto_button_r button"
+                    className="proyecto_button proyecto_button_r button text-decoration-none text-reset"
                     href="https://github.com/nachog8/IntraNoc"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -231,7 +231,7 @@ const Projects = () => {
                 </div>
                 <div className="proyecto_opc">
                   <a
-                    className="proyecto_button proyecto_button_r button"
+                    className="proyecto_button proyecto_button_r button text-decoration-none text-reset"
                     href="https://github.com/nachog8/JuniorCoderBook"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -265,7 +265,7 @@ const Projects = () => {
                   </div>
                   <div className="proyecto_opc">
                     <a
-                      className="proyecto_button proyecto_button_r button"
+                      className="proyecto_button proyecto_button_r button text-decoration-none text-reset"
                       href="https://github.com/nachog8/PertApp"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -281,13 +281,11 @@ const Projects = () => {
 
         {/* Botón para mostrar/ocultar nuevos proyectos */}
         <a
-          className="proyecto_button proyecto_button_r button mostrar_mas_button"
+          className="proyecto_button proyecto_button_r button mostrar_mas_button text-decoration-none text-reset"
           onClick={toggleProjects}
           style={{ cursor: "pointer" }}
         >
-          <div>
-            {mostrarMasProjects ? "Ocultar Proyectos" : "Mostrar Más Proyectos"}
-          </div>
+          <div>{mostrarMasProjects ? "Ocultar" : "Mostrar Más"}</div>
         </a>
       </div>
     </section>

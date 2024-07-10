@@ -8,7 +8,9 @@ const Header = () => {
           <div className="cont_menu">
             <div className="menu_logo">
               <p>
-                <a href="/">I.G.&nbsp;Portafolio</a>
+                <a className="text-decoration-none text-reset" href="/">
+                  I.G.&nbsp;Portafolio
+                </a>
               </p>
             </div>
             <div className="menu_redes redes">
@@ -40,13 +42,28 @@ const Header = () => {
             <div className="menu_categorias">
               <ul>
                 <li>
-                  <a href="#proyectos">Proyectos</a>
+                  <a
+                    className="text-decoration-none text-reset"
+                    href="#proyectos"
+                  >
+                    Proyectos
+                  </a>
                 </li>
                 <li>
-                  <a href="#tecnologias">Tecnologias</a>
+                  <a
+                    className="text-decoration-none text-reset"
+                    href="#tecnologias"
+                  >
+                    Tecnologias
+                  </a>
                 </li>
                 <li>
-                  <a href="#sobre-mi">Sobre mi</a>
+                  <a
+                    className="text-decoration-none text-reset"
+                    href="#sobre-mi"
+                  >
+                    Sobre mi
+                  </a>
                 </li>
               </ul>
             </div>

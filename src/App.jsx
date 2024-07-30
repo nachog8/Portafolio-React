@@ -7,6 +7,7 @@ import Extra from "./components/Extra";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import ScrollButton from "./components/Scroll-Button";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 function App() {
